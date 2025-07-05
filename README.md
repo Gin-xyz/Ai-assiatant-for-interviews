@@ -64,19 +64,11 @@ npm install --legacy-peer-deps
 ```
 
 3. **Set up environment variables**
-Create a `.env.local` file with:
-```env
-# Supabase Configuration (Required)
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-
-# Google Gemini AI (Required)
-GOOGLE_GEMINI_API_KEY=your_gemini_api_key
-
-# Optional: Additional AI APIs
-XAI_API_KEY=your_xai_api_key
-GROQ_API_KEY=your_groq_api_key
+Copy the environment template and add your API keys:
+```bash
+cp .env.example .env.local
 ```
+Then edit `.env.local` with your actual API keys and database credentials.
 
 4. **Run the development server**
 ```bash
